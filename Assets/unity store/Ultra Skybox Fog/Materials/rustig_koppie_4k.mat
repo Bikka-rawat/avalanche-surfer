@@ -37,12 +37,12 @@ Material:
     - <noninit>: 0
     - _Exposure: 1
     - _FogBottom: 1
-    - _FogEnd: 0.15
+    - _FogEnd: 0.239
     - _FogIntens: 1
-    - _FogStart: 0
+    - _FogStart: 0.053
     - _MieIntens: 1.122
     - _MieSize: 0.359
-    - _Rotation: 0
+    - _Rotation: 346
     - _SunDir: 55
     m_Colors:
     - <noninit>: {r: 0, g: 2.0182498, b: 1e-45, a: 1.2904559e-15}

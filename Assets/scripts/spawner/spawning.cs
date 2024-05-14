@@ -5,11 +5,7 @@ using UnityEngine;
 public class spawning : MonoBehaviour
 {
     [SerializeField] GameObject[] levels;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Transform spawnpoint;
 
     // Update is called once per frame
     void Update()
@@ -21,6 +17,6 @@ public class spawning : MonoBehaviour
     {
         int index = Random.Range(0, levels.Length);
         Debug.Log(index);
-        Instantiate(levels[index], new Vector3(0, -196.5f, 1085f), levels[index].transform.rotation);
+        Instantiate(levels[index], spawnpoint.position, levels[index].transform.rotation);
     }
 }

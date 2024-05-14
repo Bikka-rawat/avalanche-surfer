@@ -23,7 +23,7 @@ public class mousemove : MonoBehaviour
         
 
         turn.x = Mathf.Clamp(turn.x, -45, 45);
-        turn.y = Mathf.Clamp(turn.y, -30, 5);
+        turn.y = Mathf.Clamp(turn.y, -30, 10);
         tilt();
         transform.localRotation = Quaternion.Euler(-turn.y, turn.x, turn.z);
 
@@ -34,13 +34,13 @@ public class mousemove : MonoBehaviour
 
     void tilt()
     {
-        if (Input.GetAxis("Horizontal")>0)
+        if (Input.GetKey(KeyCode.D))
         {
             turn.z = Mathf.Lerp(turn.z,-cameraTiltAmount, cameraTiltSpeed);
 
         }
 
-        else if (Input.GetAxis("Horizontal") < 0)
+        else if (Input.GetKey(KeyCode.A))
         {
             turn.z = Mathf.Lerp(turn.z, cameraTiltAmount, cameraTiltSpeed);
 
