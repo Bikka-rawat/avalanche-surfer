@@ -1,2 +1,2 @@
 # avalanche-surfer
- land endless runner
+Avalanche Surfer is a three-dimensional endless runner game where players embark on a thrilling descent down a snow-covered hill. The objective is to navigate through the course, skillfully avoiding various obstacles that appear in the player's path. Upon colliding with an obstacle, the player's vision becomes obscured as their goggles are covered in snow. To regain clear visibility, players must collect special items scattered throughout the game that serve to clean their goggles.
